@@ -27,6 +27,8 @@
   
 
   
+  <link rel="shortcut icon" type='image/x-icon' href="/images/8.jpg">
+  
 
   
     
@@ -98,9 +100,9 @@
 
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header material">
   <div id="loading-bar-wrapper">
-    <div id="loading-bar" class="pure"></div>
+    <div id="loading-bar" class="material"></div>
   </div>
 
 	<div class='wrapper'>
@@ -258,9 +260,9 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://ldxcaicai.github.io" rel="nofollow">
+      <a href="http://xdl030112.github.io" rel="nofollow">
         
-          <i class="fas fa-user" aria-hidden="true"></i>
+          <img src="/images/kano.jpg">
         
         <p>ldxcaicai</p>
       </a>
@@ -387,10 +389,6 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ri register int</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; pii;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fi first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> se second</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> rlen=<span class="number">1</span>&lt;&lt;<span class="number">18</span>|<span class="number">1</span>;</span><br><span class="line"><span class="keyword">char</span> buf[rlen],*ib=buf,*ob=buf;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> gc() (((ib==ob)&amp;&amp;(ob=(ib=buf)+fread(buf,1,rlen,stdin)),ib==ob)?-1:*ib++)</span></span><br><span class="line"><span class="keyword">namespace</span> modular&#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> mod=<span class="number">1000000123</span>;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;<span class="keyword">return</span> a+b&lt;mod?a+b:a+b-mod;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">dec</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;<span class="keyword">return</span> a&lt;b?a-b+mod:a-b;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">mul</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;<span class="keyword">return</span> (ll)a*b%mod;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span></span>&#123;a=a+b&lt;mod?a+b:a+b-mod;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Dec</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span></span>&#123;a=a&lt;b?a-b+mod:a-b;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Mul</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span></span>&#123;a=(ll)a*b%mod;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">ksm</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> p)</span></span>&#123;<span class="keyword">int</span> ret=<span class="number">1</span>;<span class="keyword">for</span>(;p;p&gt;&gt;=<span class="number">1</span>,Mul(a,a))(p&amp;<span class="number">1</span>)&amp;&amp;(Mul(ret,a),<span class="number">1</span>);<span class="keyword">return</span> ret;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> modular;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">50005</span>;</span><br><span class="line"><span class="keyword">int</span> fac[N],ifac[N],f[N],n,pre[N];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span>&#123;</span><br><span class="line">	fac[<span class="number">0</span>]=fac[<span class="number">1</span>]=ifac[<span class="number">0</span>]=ifac[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">2</span>;i&lt;=n;++i)&#123;</span><br><span class="line">		fac[i]=mul(fac[i<span class="number">-1</span>],i);</span><br><span class="line">		ifac[i]=mul(ifac[mod-mod/i*i],mod-mod/i);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">2</span>;i&lt;=n;++i)Mul(ifac[i],ifac[i<span class="number">-1</span>]);</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=n;++i)&#123;</span><br><span class="line">		fac[i]=ksm(fac[i],n);</span><br><span class="line">		ifac[i]=ksm(ifac[i],n);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">C</span><span class="params">(<span class="keyword">int</span> n,<span class="keyword">int</span> m)</span></span>&#123;<span class="keyword">return</span> n&lt;m||m&lt;<span class="number">0</span>?<span class="number">0</span>:mul(fac[n],mul(ifac[m],ifac[n-m]));&#125;</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;a;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">	f[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(ri ss,pre=<span class="number">0</span>,i=<span class="number">1</span>;i&lt;a.size();++i)&#123;</span><br><span class="line">		pre+=a[i];</span><br><span class="line">		f[i]=<span class="number">0</span>;</span><br><span class="line">		ss=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(ri j=i<span class="number">-1</span>;~j;--j)&#123;</span><br><span class="line">			ss+=a[j+<span class="number">1</span>];</span><br><span class="line">			<span class="keyword">if</span>((i-j)&amp;<span class="number">1</span>)Add(f[i],mul(f[j],C(pre,ss)));</span><br><span class="line">			<span class="keyword">else</span> Dec(f[i],mul(f[j],C(pre,ss)));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> f[a.size()<span class="number">-1</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">ifdef</span> ldxcaicai</span></span><br><span class="line">    freopen(<span class="string">"lx.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">    <span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">    n=<span class="number">50000</span>;</span><br><span class="line">	init();</span><br><span class="line">    <span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=n;++i)&#123;</span><br><span class="line">    	a.resize(<span class="number">1</span>);</span><br><span class="line">    	<span class="keyword">for</span>(ri j=n;j;j-=a.back())a.pb(min(i,j));</span><br><span class="line">    	Add(res,solve());</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;res;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </details>
       </div>
-      
-        <br>
-        <p>ldx还是太菜了</p>
-
       
       
         <br>
@@ -550,7 +548,7 @@
           
             
               <section class='widget author'>
-  <div class='content pure'>
+  <div class='content material'>
     
       <div class='avatar'>
         <img class='avatar' src='/images/ss.jpg'/>
@@ -581,17 +579,6 @@
           
           
         
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
           
           
         
@@ -609,7 +596,49 @@
           
           
         
+          
+          
+        
       
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='material'>
+  <div><i class="fas fa-toc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content material'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#sockpuppets"><span class="toc-text"> Sockpuppets</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#drazil-and-morning-exercise"><span class="toc-text"> Drazil and Morning Exercise</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#numbers-on-the-blackboard"><span class="toc-text"> Numbers on the blackboard</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主旋律"><span class="toc-text"> 主旋律</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#biconnected"><span class="toc-text"> Biconnected</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#集合选数"><span class="toc-text"> 集合选数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进攻"><span class="toc-text"> 进攻！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#permuted-matrices"><span class="toc-text"> Permuted Matrices</span></a></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+      
+        
+          
+          
         
           
           
@@ -637,7 +666,7 @@
               
   <section class='widget category'>
     
-<header class='pure'>
+<header class='material'>
   <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Categories</div>
   
     <a class="rightBtn"
@@ -651,7 +680,7 @@
   
 </header>
 
-    <div class='content pure'>
+    <div class='content material'>
       <ul class="entry">
         
           <li><a class="flat-box" title="/categories/private/" href="/categories/private/"><div class='name'>private</div><div class='badge'>(6)</div></a></li>
@@ -664,6 +693,9 @@
 
 
             
+          
+        
+          
           
         
           
@@ -686,7 +718,7 @@
               
   <section class='widget tagcloud'>
     
-<header class='pure'>
+<header class='material'>
   <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hot Tags</div>
   
     <a class="rightBtn"
@@ -700,13 +732,16 @@
   
 </header>
 
-    <div class='content pure'>
+    <div class='content material'>
       <a href="/tags/%E6%AF%94%E8%B5%9B%E9%A2%98%E8%A7%A3/" style="font-size: 19px; color: #777">比赛题解</a> <a href="/tags/%E8%80%83%E8%AF%95%E9%A2%98%E8%A7%A3/" style="font-size: 14px; color: #999">考试题解</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 24px; color: #555">题解</a>
     </div>
   </section>
 
 
             
+          
+        
+          
           
         
       
@@ -719,12 +754,12 @@
             
               <section class='widget list'>
   
-<header class='pure'>
+<header class='material'>
   <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
   
 </header>
 
-  <div class='content pure'>
+  <div class='content material'>
     <ul class="entry">
       
         <li><a class="flat-box" title="/" href="/"
@@ -750,7 +785,7 @@
             
               <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
             
-            &nbsp;&nbsp;文章归档
+            &nbsp;&nbsp;归档
           </div>
           
         </a></li>
@@ -765,7 +800,7 @@
             
               <i class="fas fa-link fa-fw" aria-hidden="true"></i>
             
-            &nbsp;&nbsp;我的友链
+            &nbsp;&nbsp;友链
           </div>
           
         </a></li>
@@ -783,7 +818,13 @@
           
           
         
+          
+          
+        
       
+        
+          
+          
         
           
           
@@ -880,14 +921,14 @@
       $(function(){
         if ('.cover') {
           $('.cover').backstretch(
-          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          ["/images/cover.png"],
           {
             duration: "6000",
             fade: "2500"
           });
         } else {
           $.backstretch(
-          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          ["/images/cover.png"],
           {
             duration: "6000",
             fade: "2500"
