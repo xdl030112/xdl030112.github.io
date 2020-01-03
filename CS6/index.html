@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>CS Academy Round 6 简要题解 | 自由を渇望する</title>
+  
+  
+  <meta name="description" content="Konjak_ldx's blog">
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
+  
+
+  
+  <link rel="shortcut icon" type='image/x-icon' href="/images/8.jpg">
+  
+
+  
+    
+<link rel="stylesheet" href="/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <h1 class='title'>自由を渇望する</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header material">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="material"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          自由を渇望する
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/CS6/">
+        CS Academy Round 6 简要题解
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://xdl030112.github.io" rel="nofollow">
+        
+          <img src="/images/kano.jpg">
+        
+        <p>ldxcaicai</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2020-01-03</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/public/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>public</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+
+
+          
+        
+          
+            
+  
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <h2 id="a"><a class="markdownIt-Anchor" href="#a"></a> A</h2>
+<p>一道<s>由于我过于沙雕调了很久的</s>模拟题</p>
+<details><summary>CODE</summary>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ri register int</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; poly;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> rlen=<span class="number">1</span>&lt;&lt;<span class="number">18</span>|<span class="number">1</span>;</span><br><span class="line"><span class="keyword">char</span> buf[rlen],*ib=buf,*ob=buf;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> gc() (((ib==ob)&amp;&amp;(ob=(ib=buf)+fread(buf,1,rlen,stdin)),ib==ob)?-1:*ib++)</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">char</span> ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)) ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) ans=((ans&lt;&lt;<span class="number">2</span>)+ans&lt;&lt;<span class="number">1</span>)+(ch^<span class="number">48</span>),ch=gc();</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span> modular &#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">dec</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">mul</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> (ll)a*b%mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Dec</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Mul</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=(ll)a*b%mod; &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> modular;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">1e5</span>+<span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> n,lens;</span><br><span class="line"><span class="keyword">bool</span> okpre[N],oksuf[N];</span><br><span class="line"><span class="keyword">char</span> s[N],t[N];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">ifdef</span> ldxcaicai</span></span><br><span class="line">	freopen(<span class="string">"lx.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%s"</span>,s+<span class="number">1</span>),lens=<span class="built_in">strlen</span>(s+<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(ri len,tt=<span class="number">1</span>;tt&lt;=n;++tt) &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%s"</span>,t+<span class="number">1</span>);</span><br><span class="line">		len=<span class="built_in">strlen</span>(t+<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">if</span>(max(lens,len)-min(lens,len)&gt;<span class="number">1</span>) <span class="keyword">continue</span>;</span><br><span class="line">		okpre[<span class="number">0</span>]=oksuf[len+<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=len;++i) okpre[i]=oksuf[i]=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=len&amp;&amp;i&lt;=lens;++i) okpre[i]=okpre[i<span class="number">-1</span>]&amp;&amp;(s[i]==t[i]);</span><br><span class="line">		<span class="keyword">for</span>(ri i=len,j=lens;i&amp;&amp;j;--i,--j) oksuf[i]=oksuf[i+<span class="number">1</span>]&amp;&amp;(s[j]==t[i]);</span><br><span class="line">		<span class="keyword">if</span>(len==lens) &#123;</span><br><span class="line">			<span class="keyword">bool</span> ff=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=len;++i) <span class="keyword">if</span>(okpre[i<span class="number">-1</span>]&amp;&amp;oksuf[i+<span class="number">1</span>]) &#123;</span><br><span class="line">				ff=<span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(ff) ++res;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(len==lens<span class="number">-1</span>) &#123;</span><br><span class="line">			<span class="keyword">bool</span> ff=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=len+<span class="number">1</span>;++i) <span class="keyword">if</span>(okpre[i<span class="number">-1</span>]&amp;&amp;oksuf[i]) &#123;</span><br><span class="line">				ff=<span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(ff) ++res;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">bool</span> ff=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=len;++i) <span class="keyword">if</span>(okpre[i<span class="number">-1</span>]&amp;&amp;oksuf[i+<span class="number">1</span>]) &#123;</span><br><span class="line">				ff=<span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(ff) ++res;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;res;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+<hr />
+<h2 id="b"><a class="markdownIt-Anchor" href="#b"></a> B</h2>
+<p>双指针扫一下</p>
+<details><summary>CODE</summary>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ri register int</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; poly;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> rlen=<span class="number">1</span>&lt;&lt;<span class="number">18</span>|<span class="number">1</span>;</span><br><span class="line"><span class="keyword">char</span> buf[rlen],*ib=buf,*ob=buf;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> gc() (((ib==ob)&amp;&amp;(ob=(ib=buf)+fread(buf,1,rlen,stdin)),ib==ob)?-1:*ib++)</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">char</span> ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)) ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) ans=((ans&lt;&lt;<span class="number">2</span>)+ans&lt;&lt;<span class="number">1</span>)+(ch^<span class="number">48</span>),ch=gc();</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span> modular &#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">dec</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">mul</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> (ll)a*b%mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Dec</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Mul</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=(ll)a*b%mod; &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> modular;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">1e5</span>+<span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> n,k,ps[N];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">ifdef</span> ldxcaicai</span></span><br><span class="line">	freopen(<span class="string">"lx.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">	n=read(),k=read();</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=n;++i) ps[i]=read();</span><br><span class="line">	sort(ps+<span class="number">1</span>,ps+n+<span class="number">1</span>);</span><br><span class="line">	ps[++n]=<span class="number">0x3f3f3f3f</span>;</span><br><span class="line">	<span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(ri pre=<span class="number">0</span>,l=<span class="number">1</span>,r=<span class="number">0</span>;r&lt;=n;++l,pre-=ps[l]-ps[l<span class="number">-1</span>]<span class="number">-1</span>) &#123;</span><br><span class="line">		<span class="keyword">if</span>(l&gt;r) &#123;</span><br><span class="line">			pre=<span class="number">0</span>;</span><br><span class="line">			r=l;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span>(r&lt;n&amp;&amp;pre+ps[r+<span class="number">1</span>]-ps[r]<span class="number">-1</span>&lt;=k) ++r,pre+=ps[r]-ps[r<span class="number">-1</span>]<span class="number">-1</span>;</span><br><span class="line">		res=max(res,ps[r]-ps[l]+<span class="number">1</span>+(k-pre));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;res;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+<hr />
+<h2 id="c"><a class="markdownIt-Anchor" href="#c"></a> C</h2>
+<p>瞎猜了一个错的结论结果还过了 <s>MD绝了</s></p>
+<p>这里放一个错了的代码</p>
+<details><summary>CODE</summary>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ri register int</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; poly;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> rlen=<span class="number">1</span>&lt;&lt;<span class="number">18</span>|<span class="number">1</span>;</span><br><span class="line"><span class="keyword">char</span> buf[rlen],*ib=buf,*ob=buf;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> gc() (((ib==ob)&amp;&amp;(ob=(ib=buf)+fread(buf,1,rlen,stdin)),ib==ob)?-1:*ib++)</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">char</span> ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)) ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) ans=((ans&lt;&lt;<span class="number">2</span>)+ans&lt;&lt;<span class="number">1</span>)+(ch^<span class="number">48</span>),ch=gc();</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span> modular &#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">dec</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">mul</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> (ll)a*b%mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Dec</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Mul</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=(ll)a*b%mod; &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> modular;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">1e5</span>+<span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> n,ct1,ct2,ss;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">ifdef</span> ldxcaicai</span></span><br><span class="line">	freopen(<span class="string">"lx.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">	<span class="keyword">for</span>(ri tt=read();tt;--tt) &#123;</span><br><span class="line">		n=read();</span><br><span class="line">		ct1=<span class="number">0</span>,ct2=<span class="number">0</span>,ss=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(ri i=<span class="number">1</span>,x;i&lt;=n;++i) &#123;</span><br><span class="line">			<span class="keyword">if</span>((x=read())==<span class="number">1</span>) ++ct1;</span><br><span class="line">			<span class="keyword">else</span> ++ct2,ss^=x;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(!ct2) <span class="built_in">cout</span>&lt;&lt;(ct1&amp;<span class="number">1</span>?<span class="string">"A\n"</span>:<span class="string">"B\n"</span>);</span><br><span class="line">		<span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;(ss?<span class="string">"A\n"</span>:<span class="string">"B\n"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+<p>然后正解就是看有没有出现奇数次的元素，有的话就 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>w</mi><mi>i</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">win</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span></span></span></span> 了</p>
+<p><s>没有代码</s></p>
+<h2 id="d"><a class="markdownIt-Anchor" href="#d"></a> D</h2>
+<p>说来惭愧，我会 E,F 不会 D</p>
+<p><s>才不会告诉你是因为把题看错了以为是 fft 题于是不想写了呢</s>，首先是得考虑到每两行之间没啥关系，因此只用考虑 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span> 的情况，发现这个时候如果有一个元素出现超过 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 次一定不合法，否则一定能贪心+堆构造一波合法答案，然后拓展到多行即可</p>
+<details><summary>CODE</summary>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ri register int</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; poly;</span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; pii;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fi first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> se second</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> rlen=<span class="number">1</span>&lt;&lt;<span class="number">18</span>|<span class="number">1</span>;</span><br><span class="line"><span class="keyword">char</span> buf[rlen],*ib=buf,*ob=buf;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> gc() (((ib==ob)&amp;&amp;(ob=(ib=buf)+fread(buf,1,rlen,stdin)),ib==ob)?-1:*ib++)</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">char</span> ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)) ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) ans=((ans&lt;&lt;<span class="number">2</span>)+ans&lt;&lt;<span class="number">1</span>)+(ch^<span class="number">48</span>),ch=gc();</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> ll <span class="title">readl</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	ll ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">char</span> ch=gc();</span><br><span class="line">	<span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)) ch=gc();</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) ans=((ans&lt;&lt;<span class="number">2</span>)+ans&lt;&lt;<span class="number">1</span>)+(ch^<span class="number">48</span>),ch=gc();</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span> modular &#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">dec</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">mul</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> (ll)a*b%mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Dec</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Mul</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=(ll)a*b%mod; &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> modular;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">1e6</span>+<span class="number">5</span>;</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;a[N],L[N],R[N];</span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">ifdef</span> ldxcaicai</span></span><br><span class="line">	freopen(<span class="string">"lx.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">	n=read(),m=read();</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=n;++i) &#123;</span><br><span class="line">		a[i].resize(m+<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">for</span>(ri j=<span class="number">1</span>;j&lt;=m;++j) a[i][j]=read();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">2</span>,ps;i&lt;=n;++i) &#123;</span><br><span class="line">		<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;vl;</span><br><span class="line">		<span class="keyword">for</span>(ri j=<span class="number">1</span>;j&lt;=m;++j) &#123;</span><br><span class="line">			vl.pb(a[i<span class="number">-1</span>][j]);</span><br><span class="line">			L[a[i<span class="number">-1</span>][j]].pb(j);</span><br><span class="line">			vl.pb(a[i][j]);</span><br><span class="line">			R[a[i][j]].pb(j);</span><br><span class="line">		&#125;</span><br><span class="line">		sort(vl.begin(),vl.end());</span><br><span class="line">		vl.erase(unique(vl.begin(),vl.end()),vl.end());</span><br><span class="line">		<span class="built_in">set</span>&lt;pii&gt;A,B;</span><br><span class="line">		<span class="keyword">for</span>(ri j=<span class="number">0</span>,_vl;j&lt;(<span class="keyword">int</span>)vl.size();++j) &#123;</span><br><span class="line">			_vl=vl[j];</span><br><span class="line">			<span class="keyword">if</span>((<span class="keyword">int</span>)L[_vl].size()+(<span class="keyword">int</span>)R[_vl].size()&gt;m) <span class="keyword">return</span> <span class="built_in">puts</span>(<span class="string">"-1"</span>),<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">if</span>((<span class="keyword">int</span>)L[_vl].size()) A.insert(pii((<span class="keyword">int</span>)L[_vl].size()+(<span class="keyword">int</span>)R[_vl].size(),_vl));</span><br><span class="line">			<span class="keyword">if</span>((<span class="keyword">int</span>)R[_vl].size()) B.insert(pii((<span class="keyword">int</span>)L[_vl].size()+(<span class="keyword">int</span>)R[_vl].size(),_vl));</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span>((<span class="keyword">int</span>)A.size()) &#123;</span><br><span class="line">			pii vlx=*A.rbegin(),vly;</span><br><span class="line">			A.erase(vlx);</span><br><span class="line">			B.erase(vlx);</span><br><span class="line">			vly=*B.rbegin();</span><br><span class="line">			A.erase(vly);</span><br><span class="line">			B.erase(vly);</span><br><span class="line">			a[i][L[vlx.se].back()]=vly.se;</span><br><span class="line">			L[vlx.se].pop_back();</span><br><span class="line">			R[vly.se].pop_back();</span><br><span class="line">			<span class="keyword">if</span>((<span class="keyword">int</span>)L[vlx.se].size()) A.insert(pii((<span class="keyword">int</span>)L[vlx.se].size()+(<span class="keyword">int</span>)R[vlx.se].size(),vlx.se));</span><br><span class="line">			<span class="keyword">if</span>((<span class="keyword">int</span>)R[vlx.se].size()) B.insert(pii((<span class="keyword">int</span>)L[vlx.se].size()+(<span class="keyword">int</span>)R[vlx.se].size(),vlx.se));</span><br><span class="line">			<span class="keyword">if</span>((<span class="keyword">int</span>)L[vly.se].size()) A.insert(pii((<span class="keyword">int</span>)L[vly.se].size()+(<span class="keyword">int</span>)R[vly.se].size(),vly.se));</span><br><span class="line">			<span class="keyword">if</span>((<span class="keyword">int</span>)R[vly.se].size()) B.insert(pii((<span class="keyword">int</span>)L[vly.se].size()+(<span class="keyword">int</span>)R[vly.se].size(),vly.se));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=n;++i,<span class="built_in">puts</span>(<span class="string">""</span>)) <span class="keyword">for</span>(ri j=<span class="number">1</span>;j&lt;=m;++j) <span class="built_in">cout</span>&lt;&lt;a[i][j]&lt;&lt;<span class="string">' '</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+<hr />
+<h2 id="e"><a class="markdownIt-Anchor" href="#e"></a> E</h2>
+<p>一开始没看到最长两个字感觉是 sbt 结果写完交上去发现没过样例</p>
+<p>冷静了一下发现 lis 的话随便构造一下就过了。</p>
+<details><summary>CODE</summary>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ri register int</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; poly;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> rlen=<span class="number">1</span>&lt;&lt;<span class="number">18</span>|<span class="number">1</span>;</span><br><span class="line"><span class="keyword">char</span> buf[rlen],*ib=buf,*ob=buf;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> gc() (((ib==ob)&amp;&amp;(ob=(ib=buf)+fread(buf,1,rlen,stdin)),ib==ob)?-1:*ib++)</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">char</span> ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)) ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) ans=((ans&lt;&lt;<span class="number">2</span>)+ans&lt;&lt;<span class="number">1</span>)+(ch^<span class="number">48</span>),ch=gc();</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span> modular &#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">dec</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">mul</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> (ll)a*b%mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Dec</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Mul</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=(ll)a*b%mod; &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> modular;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">105</span>;</span><br><span class="line"><span class="keyword">int</span> K;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">ifdef</span> ldxcaicai</span></span><br><span class="line">	freopen(<span class="string">"lx.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;K;</span><br><span class="line">	<span class="keyword">for</span>(ri t,ct=<span class="number">1</span>;K;K/=<span class="number">10</span>,++ct) &#123;</span><br><span class="line">		t=K%<span class="number">10</span>;</span><br><span class="line">		<span class="keyword">for</span>(ri i=<span class="number">1</span>;i&lt;=t;++i) <span class="built_in">cout</span>&lt;&lt;ct&lt;&lt;<span class="string">' '</span>;</span><br><span class="line">		<span class="keyword">if</span>(K&gt;<span class="number">9</span>)<span class="built_in">cout</span>&lt;&lt;<span class="number">500000000</span>+ct&lt;&lt;<span class="string">' '</span>;</span><br><span class="line">		<span class="keyword">for</span>(ri i=t+<span class="number">1</span>;i&lt;=min(K,<span class="number">10</span>);++i) <span class="built_in">cout</span>&lt;&lt;ct&lt;&lt;<span class="string">' '</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+<hr />
+<h2 id="f"><a class="markdownIt-Anchor" href="#f"></a> F</h2>
+<p>把所有环的异或值提出来做线性基即可，引起我极度舒适</p>
+<details><summary>CODE</summary>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ri register int</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; poly;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fi first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> se second</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> rlen=<span class="number">1</span>&lt;&lt;<span class="number">18</span>|<span class="number">1</span>;</span><br><span class="line"><span class="keyword">char</span> buf[rlen],*ib=buf,*ob=buf;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> gc() (((ib==ob)&amp;&amp;(ob=(ib=buf)+fread(buf,1,rlen,stdin)),ib==ob)?-1:*ib++)</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">char</span> ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)) ch=gc();</span><br><span class="line">  <span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) ans=((ans&lt;&lt;<span class="number">2</span>)+ans&lt;&lt;<span class="number">1</span>)+(ch^<span class="number">48</span>),ch=gc();</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> ll <span class="title">readl</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	ll ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">char</span> ch=gc();</span><br><span class="line">	<span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch)) ch=gc();</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch)) ans=((ans&lt;&lt;<span class="number">2</span>)+ans&lt;&lt;<span class="number">1</span>)+(ch^<span class="number">48</span>),ch=gc();</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span> modular &#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">dec</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">mul</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123; <span class="keyword">return</span> (ll)a*b%mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Add</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a+b&lt;mod?a+b:a+b-mod; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Dec</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=a&lt;b?a-b+mod:a-b; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Mul</span><span class="params">(<span class="keyword">int</span>&amp;a,<span class="keyword">int</span> b)</span> </span>&#123; a=(ll)a*b%mod; &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> modular;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">1e5</span>+<span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line">ll dis[N],a[<span class="number">105</span>];</span><br><span class="line"><span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">int</span>,ll&gt; &gt;e[N];</span><br><span class="line"><span class="keyword">bool</span> vs[N];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(ll x)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">63</span>;~i;--i) &#123;</span><br><span class="line">		<span class="keyword">if</span>(!x) <span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">if</span>(x&gt;&gt;i&amp;<span class="number">1</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span>(a[i]) x^=a[i];</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				a[i]=x;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> ll <span class="title">query</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	ll res=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">63</span>;~i;--i) res=max(res,res^a[i]);</span><br><span class="line">	<span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">	vs[p]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">0</span>,v;i&lt;(<span class="keyword">int</span>)e[p].size();++i) &#123;</span><br><span class="line">		<span class="keyword">if</span>(vs[v=e[p][i].fi]) &#123;</span><br><span class="line">			insert(dis[p]^dis[v]^e[p][i].se);</span><br><span class="line">			<span class="keyword">continue</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		dis[v]=dis[p]^e[p][i].se;</span><br><span class="line">		dfs(v);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">ifdef</span> ldxcaicai</span></span><br><span class="line">	freopen(<span class="string">"lx.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">	<span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">	n=read(),m=read();</span><br><span class="line">	ll w;</span><br><span class="line">	<span class="keyword">for</span>(ri i=<span class="number">1</span>,u,v;i&lt;=m;++i) &#123;</span><br><span class="line">		u=read(),v=read(),w=readl();</span><br><span class="line">		e[u].pb(make_pair(v,w));</span><br><span class="line">		e[v].pb(make_pair(u,w));</span><br><span class="line">	&#125;</span><br><span class="line">	dfs(<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;query();</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+      </div>
+      
+      
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-01-03T09:07:59+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>updated at Jan 3, 2020</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%AF%94%E8%B5%9B%E9%A2%98%E8%A7%A3/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>比赛题解</p></a></div>
+
+
+        
+      
+        
+          
+
+        
+      
+    </div>
+  </section>
+
+
+      
+      
+          <div class="prev-next">
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/CS5/" rel="prev" title="CS Academy Round 5 简要题解">
+                                  
+                                      CS Academy Round 5 简要题解
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/%E6%AF%94%E8%B5%9B%E9%A2%98%E8%A7%A3/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 比赛题解</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+          </div>
+      
+    </section>
+  </article>
+
+
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+  <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX","TeX"],
+      linebreaks: { automatic:true },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+      Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+  });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += (all[i].SourceElement().parentNode.className ? ' ' : '') + 'has-jax';
+    }
+  });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+
+  <script>
+    window.subData = {
+      title: 'CS Academy Round 6 简要题解',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+      
+        
+          
+          
+            
+              <section class='widget author'>
+  <div class='content material'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='/images/ss.jpg'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+          <h2>Konjak_ldx</h2>
+        
+        
+        
+      </div>
+    
+    
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='material'>
+  <div><i class="fas fa-toc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content material'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#a"><span class="toc-text"> A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#b"><span class="toc-text"> B</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c"><span class="toc-text"> C</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d"><span class="toc-text"> D</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#e"><span class="toc-text"> E</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#f"><span class="toc-text"> F</span></a></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget category'>
+    
+<header class='material'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Categories</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/categories/"
+    title="categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/private/" href="/categories/private/"><div class='name'>private</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/public/" href="/categories/public/"><div class='name'>public</div><div class='badge'>(27)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget tagcloud'>
+    
+<header class='material'>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hot Tags</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/tags/"
+    title="tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <a href="/tags/%E6%AF%94%E8%B5%9B%E9%A2%98%E8%A7%A3/" style="font-size: 24px; color: #555">比赛题解</a> <a href="/tags/%E8%80%83%E8%AF%95%E9%A2%98%E8%A7%A3/" style="font-size: 14px; color: #999">考试题解</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 19px; color: #777">题解</a>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget list'>
+  
+<header class='material'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content material'>
+    <ul class="entry">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;近期文章
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/archives/" href="/archives/"
+          
+            rel="nofollow"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;归档
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;友链
+          </div>
+          
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+  <br>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+  <div>
+    Use
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    as theme
+    
+    . 
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["/images/cover.png"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["/images/cover.png"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
